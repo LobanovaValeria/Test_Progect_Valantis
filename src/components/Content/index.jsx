@@ -49,11 +49,13 @@ function Content() {
 
   async function postFetchItem() {
     try {
+      setItems([])
       const _getItem = await getItem(id);
       setItems(_getItem.data.result);
       setIsLoading(false);
     } catch (error) {
       console.log(error);
+      postFetchItem();
     }
   }
 
@@ -84,7 +86,7 @@ function Content() {
 
   return (
     <>
-      {items.length === 0 && act === FILTER ? (
+      {isLoading===false && items.length === 0 && act === FILTER  ? (
         <NotFound />
       ) : (
         <>

@@ -1,6 +1,7 @@
 {
   "name": "test-app",
   "version": "0.1.0",
+  "homepage": "https://LobanovaValeria.github.io/Test_Progect_Valantis",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.3",
@@ -51,5 +52,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "6.1.1"
   }
 }
