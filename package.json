@@ -1,7 +1,6 @@
 {
   "name": "test-app",
   "version": "0.1.0",
-  "homepage": "https://LobanovaValeria.github.io/Test_Progect_Valantis",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.3",
@@ -33,7 +32,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
