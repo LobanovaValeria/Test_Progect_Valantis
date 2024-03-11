@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, } from 'react';
 import Items from './Items';
 import DefaultPagination from './DefaultPagination';
 import { getIdsForAllPages, getIds, getItem } from '../../services/dataService';
